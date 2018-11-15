@@ -1,7 +1,7 @@
 # Image Interest Points for LimeSurvey 3.x
 **A custom question theme that allows for dropping "positive" and "negative" markers and related comments on an image in LimeSurvey 3.x.**
 
-![Image Interest Points](/interestPoints/survey/questions/answer/multipleshorttext/assets/images/interest_points_1.png)
+![Image Interest Points](/interestPoints/survey/questions/answer/multipleshorttext/assets/images/interest_points_5.png)
 
 **Implementation:**
 
