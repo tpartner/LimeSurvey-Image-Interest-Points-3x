@@ -395,7 +395,7 @@ You can re-open a comment field at any time by clicking on the marker.]]></quest
    <row>
     <qid><![CDATA[4184]]></qid>
     <attribute><![CDATA[image_path]]></attribute>
-    <value><![CDATA[http://localhost:7777/limeSurvey3x/upload/themes/question/interestPoints/survey/questions/answer/multipleshorttext/assets/images/image_1.jpg]]></value>
+    <value><![CDATA[https://raw.githubusercontent.com/tpartner/LimeSurvey-Image-Interest-Points-3.x/master/interestPoints/survey/questions/answer/multipleshorttext/assets/images/image_1.jpg]]></value>
    </row>
    <row>
     <qid><![CDATA[4184]]></qid>
