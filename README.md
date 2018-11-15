@@ -17,8 +17,8 @@
 
 5) Create 3 times as many subquestions as the number of markers allowed
     - Each marker will populate three sub-questions
-    - Marker sign
-    - Marker coordinates relative to percentages of width and height of the image
+    - The marker sign
+    - The marker coordinates relative to percentages of width and height of the image
     - The marker comment
 
 6) IMPORTANT: In the survey theme options, set "AJAX mode" to "No".  
