@@ -1,0 +1,158 @@
+
+
+/***** 
+    Styles for the interestPoints custom question theme
+    Copyright (C) 2018 - Tony Partner (http://partnersurveys.com)
+    Licensed MIT, GPL
+    Version - 1.0
+    Create date - 15/11/2018
+*****/
+ 
+.interest-points-question .questions-list {
+	position: absolute;
+	left: -9999em;
+}
+ 
+.interest-points-padding {
+	float: left;
+	margin-bottom: 20px;
+	max-width: 836px;
+	background-color: #EBEBEB;
+}
+ 
+.interest-points-outer-wrapper {
+	position: relative;
+	float: left;
+	max-width: 100%px;
+	margin: 18px;
+	text-align: center;
+	border: 0px solid #DFDFDF;
+}
+ 
+.interest-points-outer-wrapper .droppable {
+	position: relative;
+}
+ 
+.interest-points-outer-wrapper .items-start {
+	height: 44px;
+	background: #D2D2D2;
+}
+ 
+.interest-points-outer-wrapper .marker {
+	position: absolute;
+	z-index: 100;
+	height: 36px;
+	width: 36px;
+	border-radius: 50%;
+	font-size: 30px;
+	line-height: 36px;
+	color: #FFFFFF;
+	cursor: move;
+}
+ 
+.interest-points-outer-wrapper .marker.minus {
+	background-color: #FF0000;
+}
+ 
+.interest-points-outer-wrapper .marker.plus {
+	background-color: #0BD30B;
+}
+ 
+.interest-points-outer-wrapper .marker.ui-draggable-dragging {
+	background-image: url(../images/crosshairs_36x36.png);
+	background-position: 0 0;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	opacity:0.50;
+	filter:alpha(opacity=50);
+}
+ 
+.interest-points-outer-wrapper .disabled-marker {
+	opacity:0.20;
+	filter:alpha(opacity=20);
+	cursor: default;
+}
+ 
+.interest-points-outer-wrapper .marker.minus.parked {
+	left: 12px !important;
+	top: 4px !important;
+}
+ 
+.interest-points-outer-wrapper .marker.plus.parked {
+	left: 62px !important;
+	top: 4px !important;
+}
+ 
+.interest-points-outer-wrapper .marker.ui-draggable-dragging i {
+	display: none;
+}
+ 
+.interest-points-outer-wrapper .input-wrapper {
+	display: none;
+	position: absolute;
+	width: 360px;
+	max-width: 50%;
+	padding: 5px;
+	background: #F8F8F8;
+	border: 1px solid #E7E7E7; 
+	cursor: default;
+	z-index: 101;
+}
+ 
+.interest-points-outer-wrapper .input-wrapper.top {
+	bottom: 50%;
+}
+ 
+.interest-points-outer-wrapper .input-wrapper.bottom {
+	top: 50%;
+}
+ 
+.interest-points-outer-wrapper .input-wrapper.left {
+	right: 50%;
+}
+ 
+.interest-points-outer-wrapper .input-wrapper.right {
+	left: 50%;
+}
+ 
+.interest-points-outer-wrapper .input-wrapper .controls {
+	padding: 5px 10px;
+}
+ 
+.interest-points-outer-wrapper .input-wrapper i {
+	color: #337AB7;
+	cursor: pointer;
+}
+ 
+.interest-points-outer-wrapper .input-wrapper i:hover {
+	color: #286090;
+}
+ 
+.interest-points-outer-wrapper .items-end-wrapper img {
+	max-width: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+ 
+	/*
+	.interest-points-outer-wrapper {
+		margin: 10px;
+	}
+	 
+	.interest-points-outer-wrapper .items-start {
+		height: 28px;
+	}
+	 
+	.interest-points-outer-wrapper .marker {
+		height: 20px;
+		width: 20px;
+		font-size: 18px;
+		line-height: 20px; 
+	}
+	*/
+ 
+	.interest-points-outer-wrapper .input-wrapper input {
+		padding: 3px;
+		font-size: 12px;
+	}
+}

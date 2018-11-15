@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Customization of the short-text question template.
+-->
+
+<config>
+    <!-- Those metadata will be displayed in the template configuration page. They are not used for now. -->
+    <metadata>
+        <name>interestPoints</name>
+        <creationDate>15/11/2018</creationDate>
+        <author>Tony Partner</author>
+        <authorEmail>tpartner@partnersurveys.com</authorEmail>
+        <authorUrl>http://partnersurveys.com</authorUrl>
+        <license>GNU General Public License version 2 or later</license>
+        <version>1.0</version>
+        <apiVersion>1</apiVersion>
+        <description>Drag "Positive" or "Negative" points onto an image and record related comments.</description>
+    </metadata>
+
+    <!--
+        Here the list of the css/js files to load.
+        Any file here will be loaded via the asset manager (when in config.php debug = 0)
+    -->
+    <files>
+        <css>
+            <filename>css/interestPoints.css</filename>
+        </css>
+        <js>
+            <filename>scripts/interestPoints.js</filename>
+            <filename>scripts/jquery-ui/jquery-ui.min.js</filename>
+            <filename>scripts/jquery.ui.touch-punch.min.js</filename>
+        </js>
+        <preview>
+            <filename>../../../../../../../../../../upload/themes/question/interestPoints/survey/questions/answer/multipleshorttext/assets/images/interest_points_1.png</filename>
+        </preview>
+    </files>
+
+    <custom_attributes>
+        <!-- New attributes -->
+		<attribute>
+            <name>image_path</name>
+            <category>Custom options</category>
+            <sortorder>0</sortorder>
+            <inputtype>text</inputtype>
+            <help>An absolute path to the image</help>
+            <caption>Image path</caption>
+        </attribute>
+        
+        <!-- Hide some core attributes -->
+        <attribute>
+            <name>hidden</name>
+            <category>Disabled options</category>
+            <sortorder>1</sortorder>
+            <inputtype></inputtype>
+			<default>0</default>
+            <help>This setting is not available in this question theme.</help>
+            <caption>Always hide this question (not required)</caption>
+            <readonly_when_active>false</readonly_when_active>
+        </attribute>
+        <attribute>
+            <name>prefix</name>
+            <category>Disabled options</category>
+            <sortorder>2</sortorder>
+            <inputtype></inputtype>
+            <i18n>1</i18n>
+            <help>This setting is not available in this question theme.</help>
+            <caption>Answer prefix (not required)</caption>
+            <readonly_when_active>false</readonly_when_active>
+        </attribute>
+        <attribute>
+            <name>suffix</name>
+            <category>Disabled options</category>
+            <sortorder>3</sortorder>
+            <inputtype></inputtype>
+            <i18n>1</i18n>
+            <help>This setting is not available in this question theme.</help>
+            <caption>Answer suffix (not required)</caption>
+            <readonly_when_active>false</readonly_when_active>
+        </attribute>
+        <attribute>
+            <name>array_filter_style</name>
+            <category>Disabled options</category>
+            <sortorder>4</sortorder>
+            <inputtype></inputtype>
+            <help>This setting is not available in this question theme.</help>
+            <caption>Array filter style (not available)</caption>
+            <readonly_when_active>false</readonly_when_active>
+        </attribute>
+        <attribute>
+            <name>display_rows</name>
+            <category>Disabled options</category>
+            <sortorder>5</sortorder>
+            <inputtype></inputtype>
+            <help>This setting is not available in this question theme.</help>
+            <caption>Display rows (not required)</caption>
+            <readonly_when_active>false</readonly_when_active>
+        </attribute>
+        <attribute>
+            <name>exclude_all_others</name>
+            <category>Disabled options</category>
+            <sortorder>6</sortorder>
+            <inputtype></inputtype>
+            <help>This setting is not available in this question theme.</help>
+            <caption>Exclusive option (not required)</caption>
+            <readonly_when_active>false</readonly_when_active>
+        </attribute>
+        <attribute>
+            <name>label_input_columns</name>
+            <category>Disabled options</category>
+            <sortorder>7</sortorder>
+            <inputtype></inputtype>
+            <help>This setting is not available in this question theme.</help>
+            <caption>Label column width (not required)</caption>
+            <readonly_when_active>false</readonly_when_active>
+        </attribute>
+        <attribute>
+            <name>maximum_chars</name>
+            <category>Disabled options</category>
+            <sortorder>8</sortorder>
+            <inputtype></inputtype>
+            <help>This setting is not available in this question theme.</help>
+            <caption>Maximum characters (not required)</caption>
+            <readonly_when_active>false</readonly_when_active>
+        </attribute>
+        <attribute>
+            <name>numbers_only</name>
+            <category>Disabled options</category>
+            <sortorder>9</sortorder>
+            <inputtype></inputtype>
+            <help>This setting is not available in this question theme.</help>
+            <caption>Numbers only (not required)</caption>
+            <readonly_when_active>false</readonly_when_active>
+        </attribute>
+        <attribute>
+            <name>text_input_columns</name>
+            <category>Disabled options</category>
+            <sortorder>10</sortorder>
+            <inputtype></inputtype>
+            <help>This setting is not available in this question theme.</help>
+            <caption>Text input box width (not required)</caption>
+            <readonly_when_active>false</readonly_when_active>
+        </attribute>
+        <attribute>
+            <name>input_size</name>
+            <category>Disabled options</category>
+            <sortorder>11</sortorder>
+            <inputtype></inputtype>
+            <help>This setting is not available in this question theme.</help>
+            <caption>Text input size (not required)</caption>
+            <readonly_when_active>false</readonly_when_active>
+        </attribute>
+    </custom_attributes>
+
+    <!-- Here datas about how LimeSurvey should load the core js/css of the question -->
+    <engine>
+        <load_core_css>true</load_core_css>
+        <load_core_js>true</load_core_js>
+        <show_as_template>true</show_as_template>
+        <show_as_question_type>true</show_as_question_type>
+        
+        
+
+        <!-- Here, you can publish packages set as third party extensions in application/config/third_party or  application/config/package -->
+        <!-- If bootstrap is registered as a css framework, it will be loaded first -->
+        <packages>
+            <add>qTip2</add>
+        </packages>
+    </engine>
+</config>

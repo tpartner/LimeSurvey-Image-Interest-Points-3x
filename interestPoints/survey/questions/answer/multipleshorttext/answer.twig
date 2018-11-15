@@ -1,0 +1,24 @@
+{#
+/**
+ * Interest Points sub-question list
+ *
+ * @var $$sRows			: the rows, generated with the views rows/answer_row*.php
+ *
+ * @var $coreClass		: the LimeSurvey list classes
+ * @var $basename		: the SGQ of the question
+ 
+ **** Additional attributes:
+ * @var question_template_attribute.image_path	: An absolute path to the image
+ */
+#}
+
+<!-- Interest Points Interface -->
+{% set interestPointsView = './views/interestPoints.twig' %}
+{{ include(interestPointsView) }}
+<!-- End of Interest Points Interface -->
+    
+<!-- Sub-question list -->
+<ul class="{{coreClass}} list-unstyled card-sort-list" role="group" aria-labelledby="ls-question-text-{{basename}}">
+    {{sRows}}
+</ul>
+<!-- End of sub-question list -->
