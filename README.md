@@ -1,5 +1,5 @@
 # Image Interest Points for LimeSurvey 3.x
-**A custom question theme that allows for dropping "positive" and "negative" markers and related comments on an image in LimeSurvey 3.x**
+**A custom question theme that allows for dropping "positive" and "negative" markers and related comments on an image in LimeSurvey 3.x.**
 
 ![Image Interest Points](/interestPoints/survey/questions/answer/multipleshorttext/assets/images/interest_points_1.png)
 
@@ -16,10 +16,10 @@
 ![Image Enter path to image](/interestPoints/survey/questions/answer/multipleshorttext/assets/images/interest_points_3.png)
 
 5) Create 3 times as many subquestions as the number of markers allowed
-- Each marker will populate three sub-questions
-- Marker sign
-- Marker coordinates relative to percentages of width and height of the image
-- The marker comment
+    - Each marker will populate three sub-questions
+    - Marker sign
+    - Marker coordinates relative to percentages of width and height of the image
+    - The marker comment
 
 6) IMPORTANT: In the survey theme options, set "AJAX mode" to "No".  
 ![Image Disable AJAX](/interestPoints/survey/questions/answer/multipleshorttext/assets/images/interest_points_4.png)
