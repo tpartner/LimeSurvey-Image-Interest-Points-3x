@@ -185,6 +185,9 @@ $(document).on('ready pjax:scriptcomplete',function(){
 					$(this).closest('.input-wrapper').fadeOut(300, function(e) {
 						$('.marker[data-index="'+thisIndex+'"]', thisQuestion).addClass('parked').attr('data-rel-x', '').attr('data-rel-y', '');
 						$('input', this).val(''); // Reset input value
+						if($('.marker:not(.parked)', thisQuestion).length < markersLength) {
+							$('.marker.parked', thisQuestion).removeClass('disabled-marker');
+						}						
 					});
 				});
 				
