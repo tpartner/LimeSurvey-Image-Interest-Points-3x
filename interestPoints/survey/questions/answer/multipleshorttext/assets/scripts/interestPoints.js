@@ -101,7 +101,7 @@ $(document).on('ready pjax:scriptcomplete',function(){
 					revert: 'invalid', 
 					zIndex: 2700, 
 					helper: 'original',
-					containment: '.interest-points-padding',
+					containment: '#question'+qID+' .interest-points-padding',
 					//handle: '.interest-points-outer-wrapper .marker',
 					start: function(event, ui) {
 						if($(ui.helper).hasClass('disabled-marker')) {
